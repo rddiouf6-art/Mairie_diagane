@@ -1,0 +1,192 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #263238;
+    background: #f5f7fa;
+}
+
+.header {
+    background: white;
+    padding: 20px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    font-size: 38px;
+}
+
+.logo h2 {
+    color: #123b32;
+    font-size: 17px;
+}
+
+.logo p {
+    color: #777;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #263238;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c49a45;
+}
+
+.btn-login,
+.btn-primary {
+    background: #145344;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    background: linear-gradient(110deg, #103b32, #286b55);
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.welcome {
+    color: #e9c675;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin: 25px 0;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background: #d3aa59;
+    color: #172f27;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.services {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.services h2,
+.about h2 {
+    color: #145344;
+    font-size: 30px;
+}
+
+.subtitle {
+    color: #777;
+    margin: 15px 0 40px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.service-card span {
+    font-size: 35px;
+}
+
+.service-card h3 {
+    color: #145344;
+    margin: 18px 0 12px;
+}
+
+.service-card p {
+    color: #777;
+    line-height: 1.6;
+}
+
+.about {
+    background: #eaf1ed;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: 20px auto 0;
+    line-height: 1.8;
+}
+
+footer {
+    background: #103b32;
+    color: white;
+    padding: 35px;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 12px;
+}
+
+@media (max-width: 900px) {
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        gap: 15px;
+    }
+}
