@@ -1,0 +1,14 @@
+DÉPLOIEMENT — RENDER
+
+1. Crée un compte sur https://render.com
+2. Mets le projet dans un dépôt GitHub (ne publie jamais db.sqlite3 avec de vraies données).
+3. Dans Render : New > Blueprint, connecte GitHub et sélectionne le dépôt contenant render.yaml.
+4. Render crée le service web et la base PostgreSQL. Attends la fin du déploiement.
+5. Ouvre l'URL .onrender.com affichée par Render.
+
+IMPORTANT :
+- Le déploiement public n'est pas une mise en production sécurisée pour les données personnelles sans authentification, rôles, sauvegardes et validation des règles applicables.
+- Le compte administrateur doit être créé via le Shell du service Render :
+  python manage.py createsuperuser
+- Pour CSRF, si le domaine personnalisé est ajouté, renseigne CSRF_TRUSTED_ORIGINS avec https://ton-domaine.
+- Le plan gratuit et ses limites peuvent évoluer. Vérifie les tarifs et la disponibilité Render avant utilisation.
